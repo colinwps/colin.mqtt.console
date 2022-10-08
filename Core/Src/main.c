@@ -112,8 +112,10 @@ int main(void)
 	  		   HAL_UART_Transmit(&huart1,(uint8_t *)"Recevie Success!\n",17,HAL_MAX_DELAY);
 	  		   break;
 	  	  }
-	  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_RESET);
-	  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_5,GPIO_PIN_SET);
+	  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_RESET);
+	  	HAL_Delay(500);
+	  	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_13,GPIO_PIN_SET);
+	  	HAL_Delay(500);
   }
 
 }
